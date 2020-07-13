@@ -1,0 +1,39 @@
+MODEL PARAMETERS
+model size along x, mdx = 600.
+model size along z, mdz = 1200.
+no of grids along x, nx = 300
+no of grids along z, nz = 150
+grid spacing,        dh = 5
+
+ABSORBING BOUNDARY PARAMETERS
+No of nodes for ABC,NAB  = 15
+PML ON TOP,        TOPBC = TOPFS
+  
+SOURCE PARAMETERS
+time step in sec,    dt = 0.001
+frequency in Hz,     f0 = 20.
+time offset in sec,  t0 = 0.05
+total time in sec,    T = 2.0
+source name,       name = ricker
+
+SOURCE GEOMETRY
+first source position,SFX = 10
+last source position, SLX = 10
+diff b/w two source,  SDX = 4
+depth of source,       SZ = 15
+
+RECEIVER GEOMETRY
+first rcv position, RFX = 0
+last rcv position,  RLX = 20
+diff b/w rcv		RDX = 4
+DEPTH OF RCV         RZ = 4
+
+FILE NAMES
+vp model file name      = VP.MAT
+density model file name = RHO.MAT
+
+
+
+
+NOTE:
+1) Always give the SDX & RDX in multiples of dh.
